@@ -1,9 +1,9 @@
-package com.hrishabhMishra.PropertyManagement.converter;
+package com.hrishabhmishra.propertymanagement.converter;
 
 import org.springframework.context.annotation.Configuration;
 
-import com.hrishabhMishra.PropertyManagement.DTO.PropertyDTO;
-import com.hrishabhMishra.PropertyManagement.entity.PropertyEntity;
+import com.hrishabhmishra.propertymanagement.dto.PropertyDTO;
+import com.hrishabhmishra.propertymanagement.entity.PropertyEntity;
 
 /**
  * 

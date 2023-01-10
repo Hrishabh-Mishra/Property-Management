@@ -1,4 +1,4 @@
-package com.hrishabhMishra.PropertyManagement.service.impl;
+package com.hrishabhmishra.propertymanagement.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.hrishabhMishra.PropertyManagement.DTO.PropertyDTO;
-import com.hrishabhMishra.PropertyManagement.converter.PropertyObjectConverter;
-import com.hrishabhMishra.PropertyManagement.entity.PropertyEntity;
-import com.hrishabhMishra.PropertyManagement.repository.PropertyRepository;
-import com.hrishabhMishra.PropertyManagement.service.PropertyService;
+import com.hrishabhmishra.propertymanagement.dto.PropertyDTO;
+import com.hrishabhmishra.propertymanagement.converter.PropertyObjectConverter;
+import com.hrishabhmishra.propertymanagement.entity.PropertyEntity;
+import com.hrishabhmishra.propertymanagement.repository.PropertyRepository;
+import com.hrishabhmishra.propertymanagement.service.PropertyService;
 
 @Service
 /**
@@ -102,21 +102,6 @@ public class PropertyServiceImpl implements PropertyService{
 		}
 		return propertyDTO;
 	}
-
-//	@Override
-//	public PropertyDTO updatePropertyOwnerName(PropertyDTO propertyDTO, Long propertyId) {
-//		Optional<PropertyEntity> propertyEntityOp = propertyRepository.findById(propertyId);
-//		PropertyEntity propertyEntity;
-//		if(propertyEntityOp.isPresent()) {
-//			propertyEntity = propertyEntityOp.get();
-//			propertyEntity.setOwnerName(propertyDTO.getOwnerName());
-//			propertyEntity.setId(propertyId);
-//			propertyRepository.save(propertyEntity);
-//			propertyDTO = converter.propropertyEntitytoDTOConverter(propertyEntity);
-//			propertyDTO.setId(propertyId);
-//		}
-//		return propertyDTO;
-//	}
 
 	@Override
 	public PropertyDTO updatePropertyAddress(PropertyDTO propertyDTO, Long propertyId) {

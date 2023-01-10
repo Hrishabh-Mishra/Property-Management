@@ -1,8 +1,8 @@
-package com.hrishabhMishra.PropertyManagement.service;
+package com.hrishabhmishra.propertymanagement.service;
 
 import java.util.List;
 
-import com.hrishabhMishra.PropertyManagement.DTO.PropertyDTO;
+import com.hrishabhmishra.propertymanagement.dto.PropertyDTO;
 
 public interface PropertyService {
 	
@@ -11,7 +11,6 @@ public interface PropertyService {
 	PropertyDTO updateProperty(PropertyDTO propertyDTO, Long propertyId); //Full update of the entry.
 	PropertyDTO updatePropertyTitle(PropertyDTO propertyDTO, Long propertyId); //partial update (Just one or two fields) of the entry.
 	PropertyDTO updatePropertyDescription(PropertyDTO propertyDTO, Long propertyId);
-	//PropertyDTO updatePropertyOwnerName(PropertyDTO propertyDTO, Long propertyId);
 	PropertyDTO updatePropertyAddress(PropertyDTO propertyDTO, Long propertyId);
 	PropertyDTO updatePropertyPrice(PropertyDTO propertyDTO, Long propertyId);
 	void deleteProperty(Long propertyId);
